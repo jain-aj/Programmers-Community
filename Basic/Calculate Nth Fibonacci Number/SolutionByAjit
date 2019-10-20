@@ -1,0 +1,19 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    int a=0,b=1,c=0,n;
+    cout<<"Enter n: ";
+    cin>>n;
+    cout<<n<<"th Fibonacci number is: ";
+    
+    for(int i=1;i<=n-2;i++)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    cout<<c;
+getch();
+}
